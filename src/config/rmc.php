@@ -1,5 +1,6 @@
 <?php
 
+// example config
 return [
     'platform' => env('RMC_PLATFORM'),
 

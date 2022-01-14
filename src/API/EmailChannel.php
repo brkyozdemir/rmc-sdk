@@ -1,6 +1,6 @@
 <?php
 
-namespace Scoutium\RMC\RestM;
+namespace Scoutium\RMC\API;
 
 use Illuminate\Support\Facades\Http;
 use Scoutium\RMC\API\RMCMessage;

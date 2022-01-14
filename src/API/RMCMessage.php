@@ -15,8 +15,8 @@ abstract class RMCMessage
         return Cache::remember(self::RMC_SERVICE_TICKET_CACHE_KEY, now()->addDay(), function () {
             $loginUrl = config('rmc.platform') . self::RETRIEVE_SERVICE_TICKET_PATH;
             return Http::post($loginUrl, [
-                'UserName' => config('rmc.username'),
-                'Password' => config('rmc.password'),
+                'UserName' => config('rmc.auth.username'),
+                'Password' => config('rmc.auth.password'),
             ])->json('ServiceTicket');
         });
     }
